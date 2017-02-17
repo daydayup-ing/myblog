@@ -1,0 +1,6 @@
+# IDE
+.idea
+
+# 忽略模块
+node_modules
+
