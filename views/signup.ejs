@@ -1,0 +1,40 @@
+<%- include('header') %>
+<div class="container">
+    <div class="blog-header" style="text-align: center;">
+        <h1 class="blog-title">Sign Up</h1>
+    </div>
+
+    <div class="blog-main">
+        <form class="form-signup">
+            <div class="form-group">
+                <label>名称</label>
+                <input type="text" class="form-control" id="name" placeholder="请输入名称">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+                <label>密码确认</label>
+                <input type="password" class="form-control" id="password-confirm" placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+                <label>性别</label>
+                <select class="form-control">
+                    <option value="">男</option>
+                    <option value="">女</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>选择头像</label>
+                <input type="file" id="inputfile">
+            </div>
+            <div class="form-group">
+                <label>个人简介</label>
+                <textarea class="form-control" rows="3" placeholder="写点什么介绍一下自己.."></textarea>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+        </form>
+    </div>
+</div>
+<%- include('footer') %>

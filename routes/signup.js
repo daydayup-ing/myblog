@@ -6,7 +6,7 @@ var checkNotLogin = require('../middlewares/check').checkNotLogin;
 // 注册页面
 // GET  /signup
 router.get('/',checkNotLogin,function (req,res,next) {
-    res.send(req.flash());
+    res.render('signup');
 });
 // 注册动作
 // POST /signup

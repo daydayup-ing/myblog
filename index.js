@@ -3,7 +3,7 @@ var express = require('express');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var flash = require('connect-flash');
-var config = require('config-lite');
+var config = require('config-lite');  // 映射到config/default.js文件
 var routes = require('./routes');  // 加载routes目录下所有路由处理文件
 var pkg = require('./package');  // 加载package.json文件
 
