@@ -31,6 +31,20 @@ app.use(session({
 // flash中间件,用于页面显示flash消息;flash中间件应该放到session中间件之后加载,因为flash是基于session的
 app.use(flash());
 
+// 设置模板全局常量,从package.json文件读取内容
+app.locals.community = {
+    title: pkg.name,
+    version: pkg.version
+};
+
+// 添加模板必须的三个变量
+app.use(function (req,res,next) {
+    res.locals.user = req.session.user;
+    res.locals.success = req.flash('success').toString();
+    res.locals.error = req.flash('error').toString();
+    next();
+});
+
 // 路由
 routes(app);
 

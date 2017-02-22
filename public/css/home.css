@@ -1,0 +1,123 @@
+/* 整个body标签内字体样式,背景色,距离顶部和底部距离 */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+/*标题样式*/
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+/*
+ * "Latest Articles"字体样式
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * 顶部导航栏Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * 主题上方4个圆形样式
+ */
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*---------*/
+/*---------*/
+/*---------*/
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/*
+ * 页面底部样式
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*
+ * 登录页面样式
+ */
+.form-signin {
+  max-width: 430px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*
+ * 注册表单样式
+ */
+.form-signup {
+  max-width: 430px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*
+ * 文章底部距离
+ */
+.blog-post {
+  margin-bottom: 60px;
+}
