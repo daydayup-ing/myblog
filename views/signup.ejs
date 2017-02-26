@@ -5,33 +5,34 @@
     </div>
 
     <div class="blog-main">
-        <form class="form-signup">
+        <form class="form-signup" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label>名称</label>
-                <input type="text" class="form-control" id="name" placeholder="请输入名称">
+                <input type="text" class="form-control" name="name" placeholder="请输入名称">
             </div>
             <div class="form-group">
                 <label>密码</label>
-                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                <input type="password" class="form-control" name="password" placeholder="请输入密码">
             </div>
             <div class="form-group">
                 <label>密码确认</label>
-                <input type="password" class="form-control" id="password-confirm" placeholder="请输入密码">
+                <input type="password" class="form-control" name="repassword" placeholder="请输入密码">
             </div>
             <div class="form-group">
                 <label>性别</label>
-                <select class="form-control">
-                    <option value="">男</option>
-                    <option value="">女</option>
+                <select class="form-control" name="gender">
+                    <option value="m">男</option>
+                    <option value="f">女</option>
+                    <option value="x">保密</option>
                 </select>
             </div>
             <div class="form-group">
                 <label>选择头像</label>
-                <input type="file" id="inputfile">
+                <input type="file" id="inputfile" name="avatar">
             </div>
             <div class="form-group">
                 <label>个人简介</label>
-                <textarea class="form-control" rows="3" placeholder="写点什么介绍一下自己.."></textarea>
+                <textarea name="bio" class="form-control" rows="3" placeholder="写点什么介绍一下自己.."></textarea>
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
         </form>
