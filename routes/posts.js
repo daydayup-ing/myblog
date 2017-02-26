@@ -12,7 +12,7 @@ var checkLogin = require('../middlewares/check').checkLogin;
 // 1: GET  /posts  所有用户的文章
 // 2: GET  /posts?author=xxx 特定用户的所有文章
 router.get('/',function (req,res,next) {
-    res.send(req.flash());
+    res.render('posts');
 });
 
 // 发表文章页面

@@ -31,6 +31,12 @@ app.use(session({
 // flash中间件,用于页面显示flash消息;flash中间件应该放到session中间件之后加载,因为flash是基于session的
 app.use(flash());
 
+// 使用express-formidable处理	form表单(包括文件上传)
+app.use(require('express-formidable')({
+    uploadDir: path.join(__dirname,'public/img'),  // 上传文件目录
+    keepExtensions: true // 上传文件的名称显示保留后缀
+}));
+
 // 设置模板全局常量,从package.json文件读取内容
 app.locals.community = {
     title: pkg.name,
